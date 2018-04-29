@@ -5,14 +5,14 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+display: flex;
+flex-direction: column;
 }
 
-div.site-container {
+
+.site-container {
   width: 960px;
   margin:auto;
-  background-color: pink;
 }
 
 header {
@@ -67,4 +67,22 @@ header {
 #sportbike {
   font-size: 2rem;
   padding-top: .25rem;
+}
+
+#testnav {
+  display: flex;
+  background-color: firebrick;
+  height: 2.5rem;
+}
+
+nav {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav span {
+  justify-content: space-between;
 }
