@@ -10,7 +10,7 @@ flex-direction: column;
 }
 
 .site-container {
-  width: 960px;
+  max-width: 960px;
   margin:auto;
 }
 
@@ -59,6 +59,26 @@ header {
   font-size: 2rem;
   margin-top: .25rem;
 }
+
+@media only screen and (max-width: 470px){
+
+  .motobox {
+    height: 15rem;
+    width: auto;
+  }
+  .bike-text-box {
+    width: auto;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+  .bike-text-box p {
+    font-size: .77rem;
+  }
+  #sportbike {
+    font-size: 1rem;
+  }
+}
+
 
 nav {
   background-color: firebrick;
@@ -142,6 +162,8 @@ justify-content: space-between;
   }
 }
 
+
+
 .info-container {
   display: flex;
   margin: 0 auto 4rem auto;
@@ -162,10 +184,32 @@ justify-content: space-between;
 
 .black-type {
   color: black;
-  margin-top: 2rem;
+  margin-top: .5rem;
   text-align: left;
 }
+@media only screen and (max-width: 470px){
+  .image-box2 {
+    display: none;
+  }
 
+.image-box1 {
+  width: 90%;
+  justify-content: center;
+}
+.info-container{
+  flex-wrap: wrap;
+  margin: 0
+
+}
+.info-block{
+  width: 90%;
+  height: auto;
+  margin: .5rem auto;
+
+}
+
+
+}
 footer {
   display: flex;
   align-items: center;
