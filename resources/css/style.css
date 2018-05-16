@@ -10,12 +10,14 @@ flex-direction: column;
 }
 
 .site-container {
+  width: 100%;
   max-width: 960px;
   margin:0 auto;
 }
                 /*HEADER*/
 header {
-  display: absolute;
+  position: absolute;
+  width: 100%;
   background-color: black;
   height: 2.32rem;
 }
@@ -72,10 +74,11 @@ header {
     height: 15rem;
   }
   .bike-text-box {
-    width: 100%;
+    width: auto;
+    max-width: 434px;
     height: auto;
     top: 10rem;
-    padding: 1rem 2rem;
+    padding: 1rem 0 1rem 2rem;
   }
   .bike-text-box p {
     font-size: .77rem;
@@ -119,14 +122,15 @@ p.hide-on-small {
 
 .gallery {
   display: flex;
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 .image-box1, .image-box2, .image-box3 {
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  justify-content: space-between;
   width: 30%;
   height: 15rem;
   margin: 3rem 1.5rem;
@@ -138,7 +142,7 @@ justify-content: space-between;
 }
 
 .image-box2 {
-  margin: 3rem 1.5rem;
+  margin: 3rem 0 3rem 0;
 }
 
 .image-box3 {
@@ -165,8 +169,11 @@ justify-content: space-between;
 /* TABLET MEDIA QUERY */
 @media only screen and (max-width: 1024px){
 
-  .image-box1 img, .image-box2 img, .image-box3 img {
-    width: 47%;
+  .gallery {
+    justify-content: space-between;
+  }
+  .image-box1 img, .image-box2 img,  {
+
     padding: 2rem;
   }
 
